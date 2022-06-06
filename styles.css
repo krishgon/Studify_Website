@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+
+/*Boilerplate*/
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(50% 98.88% at 50% 50%, rgba(255, 168, 0, 0.84) 0%, #FFA800 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoContainer {
+    height: max-content;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+
+.logo {
+    font-family: 'Dosis', sans-serif;
+    color: #835700;
+    font-size: 2.2rem;
+    text-align: center;
+    padding-top: 1rem;
+    font-weight: 500;
+}
+
+.installButton {
+    border: none;
+    padding: 1rem 2rem;
+    background-color: #FFD98E;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* 
+========================
+      BUTTON TWO
+========================
+*/
+.btn-two {
+    color: #000;
+    transition: all 0.5s;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+}
+
+.btn-two span {
+    z-index: 2;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    letter-spacing: 1px;
+}
+
+.btn-two::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid #fff2d8;
+    background-color: #FFD98E;
+}
+
+.btn-two::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid #fff2d8;
+    background-color: #FFD98E;
+}
+
+.btn-two:hover::before {
+    transform: rotate(-45deg);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.btn-two:hover::after {
+    transform: rotate(45deg);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/* -------------- */
+
+.btn {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+    /* background-color: #FFD98E; */
+  }
